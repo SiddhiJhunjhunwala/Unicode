@@ -1,0 +1,7 @@
+.sixty {
+  float: left;
+  background: #eee;
+  position: absolute;
+  top: 20px;
+  z-index: 0;
+}

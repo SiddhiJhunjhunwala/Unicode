@@ -1,0 +1,64 @@
+import React, { Component } from "react";
+import Cart from "./Cart";
+import App from "./App.js";
+
+class Item extends Component {
+  constructor(props) {
+    super(props);
+  }
+  cartHandler = function(props) {
+    console.log();
+    const q = document.getElementById("choose").value;
+    console.log(q);
+    const p = props.price;
+    const n = props.name;
+    console.log(p, n);
+    let t = 0;
+    console.log(t);
+    t = t + q;
+    document.getElementById("span").innerHTML = t;
+
+    const amount = p * q;
+    document.getElementsByClassName("append").innerHTML =
+      document.getElementsByClassName("append").innerHTML +
+      (
+        <tr>
+          <td>n</td>
+          <td>q</td>
+          <td>amount</td>
+        </tr>
+      );
+
+    let total = Cart.total;
+    total = total + amount;
+    document.getElementsByClassName("total").innerHTML = { total };
+  };
+  onClick(event, props) {
+    this.cartHandler(props);
+    App.handleClick();
+  }
+  render() {
+    return (
+      <div className="item">
+        <img src={this.props.image}></img>
+        <h3 className="name">{this.props.name}</h3>
+        <h3 className="price">{this.props.price}</h3>
+        <p>
+          Quantity:
+          <select id="choose">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </p>
+        <button key={this.props.id} onClick={this.onClick}>
+          Add to cart
+        </button>
+      </div>
+    );
+  }
+}
+
+export default Item;
