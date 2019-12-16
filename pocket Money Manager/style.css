@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.jumbotron{
+    display: flex;
+    background-image: url("images/t1.jpg");
+    justify-content: center;
+    padding: 2rem 1rem!important;
+    margin: 0!important;
+    /* align-content: center; */
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+    background-position: left;
+}
+.element{
+    margin-bottom: 10px;
+}
+#form{
+    margin: 0;
+    padding: 0 ;
+    border: 0!important;
+    outline: 0;
+    box-shadow: 0;
+}
+#form span{
+    font-weight: bold;
+    font-size: 25px;
+    font-style: italic;
+}
+#form input{
+    border-radius: 5px;
+    border: 0!important;
+    padding:3px 5px;
+}
+#form input:focus{
+    outline: none;
+    -webkit-box-shadow: 10px 12px 15px -5px #C1C1C1; 
+box-shadow: 10px 12px 15px -5px #C1C1C1;
+}
+/* .row span, .row input{
+    
+    margin-bottom: 10px ;
+   ;
+} */
+#manage{
+    display: flex;
+    padding: 8px 12px;
+    border-radius: 10px;
+    background: silver;
+    border: 0;
+    outline:0;
+    font-weight: 450;
+}/*how is it affecting button align*/
+
+#manage:hover{
+    background: #6F6158;
+    color:white;
+}
+/* .row span{
+    justify-content: center!important;
+    margin-left: auto
+} */
+.container i{
+    font-size: 700%;
+    margin: 15px 70px;
+    color: #254453;
+}
+.fa-coins{
+    margin-left: 110px!important;
+}
+.fa-wallet{
+    margin-left: 120px!important;
+}
+ #first{
+    margin-left: 150px!important;
+}
+.container .row h5{
+    margin-top: 40px;
+    font-weight:900px;
+    font-size: 150%;
+    text-align: center;
+
+}
+.col-md-4 span{
+    /* display: flex;
+    justify-content: center */ /*After writing this fw vanishes*/
+    
+    font-weight: bolder;
+    font-size: 160%;
+}
+#savings{
+    margin-left: 170px;
+}
+#expense{
+    margin-left: 150px;
+}
+.balance{
+    margin-left: 180px;
+}
+#describe{
+    margin: 30px 0px;
+    /* -webkit-box-shadow: 3px 5px 15px -14px #828282,3px -5px 15px -14px #828282; 
+    box-shadow: 3px 5px 15px -14px #828282,3px -5px 15px -14px #828282;
+    
+} */

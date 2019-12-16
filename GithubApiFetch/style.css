@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+footer{
+    width: 100%;
+    margin-top: 10% !important;
+    
+   
+}
+#text{
+    font-family: 'Montserrat', sans-serif;
+}
+.link{
+    font-style: italic !important;
+
+}
+.link:hover{
+    text-decoration: underline !important;
+}
