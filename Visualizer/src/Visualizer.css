@@ -1,0 +1,13 @@
+.array-container{
+ 
+    vertical-align: top;
+ 
+    
+}
+
+.array-bar{
+    width: 2px;
+    background-color: turquoise;
+    display: inline-block;
+    margin: 0px 1px;
+}
